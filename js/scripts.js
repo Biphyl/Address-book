@@ -4,6 +4,9 @@ function contact(first, last) {
   this.lastName = last;
 }
 
+contact.prototype.fullName = function() {
+  return this.firstName + " " + this.lastName;
+}
 
 // user interface logic
 $(document).ready(function(){
